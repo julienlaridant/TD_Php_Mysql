@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(211, 50, 50);
+    
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(126, 41, 41);
+   
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    
+}
+
+.sous{
+    display: none;
+    
+    background-color: rgb(153, 135, 74);
+    border-radius: 10px 10px / 10px 10px;
+    position: absolute;
+    width: 100%;
+    
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+   background-color: aqua;
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
